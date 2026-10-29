@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "ImpactHub",
+    "slug": "ImpactHub",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/impact-feliz-transparente.png",
+    "scheme": "impacthub",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/impact-feliz-transparente.png",
+        "monochromeImage": "./assets/images/impact-feliz-transparente.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/images/impact-feliz-transparente.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/impact-feliz-transparente.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O ImpactHub acessa suas fotos para permitir que você compartilhe campanhas no feed.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-secure-store",
+      "expo-font",
+      "expo-status-bar"
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
+  }
+}
